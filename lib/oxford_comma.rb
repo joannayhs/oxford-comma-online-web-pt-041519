@@ -1,3 +1,5 @@
+require "pry"
+
 def oxford_comma(array)
   if array.size == 1 
     array.join
@@ -5,8 +7,8 @@ def oxford_comma(array)
     array.join(" and ")
   elsif array.size >= 3 
     string = array.last 
+    binding.pry
     string[0] << "and "
     array.join(", ")
   end 
-  array.join(", ")
 end
