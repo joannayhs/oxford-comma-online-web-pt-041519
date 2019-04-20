@@ -8,4 +8,5 @@ def oxford_comma(array)
     string[0] << "and "
     array.join(", ")
   end 
+  array.join(", ")
 end
